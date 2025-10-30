@@ -1,0 +1,16 @@
+ git add chuột phải 2 file (add file 1 và 2)
+ git commit -m "add file 1, file 2"
+ git add file 3 ( commit file 3 thì add trước)
+ git commit -m " add file 3"
+ git add file 4 ( commit file 4 thì add trước)
+ git commit -m " add file 4"
+ sau đó git log 
+undo commit 3 ( 3commit đã làm)
+git reset HEAD~3
+git log ( sẽ không thấy những  commit)
+git add file 4 (add lại file 4)
+git restored --staged <file 4 chuột phải> đưa từ  vừng staging về working 
+
+
+
+

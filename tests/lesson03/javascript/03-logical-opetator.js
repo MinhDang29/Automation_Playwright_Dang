@@ -1,0 +1,9 @@
+let a = true ;
+let b = false ;
+let c =a&&b;
+let d =a||b;
+console.log("a && b = ", c); // AND
+console.log("a || b = ", d);
+console.log("a && b = ", a && b); // AND
+console.log("a || b = ", a || b); // OR
+console.log("!a = ", !a); // NOT
