@@ -12,5 +12,20 @@ git add file 4 (add lại file 4)
 git restored --staged <file 4 chuột phải> đưa từ  vừng staging về working 
 
 
+# Chuyển về nhánh main
+git checkout main
+
+# Kéo các thay đổi mới nhất từ GitHub
+git pull origin main
+
+# Chuyển lại nhánh lesson05
+git checkout lesson05
+
+# Hợp nhất lịch sử của main vào lesson05
+# Điều này sẽ mang bất kỳ file hoặc thay đổi nào từ main vào lesson05
+git merge main
+
+git push origin lesson05
+
 
 

@@ -1,0 +1,15 @@
+Giải thích các câu lệnh:
+a. git clone <url>
+Sao chép (clone) toàn bộ repository từ một URL đã chỉ định về máy cá nhân.
+
+b. git branch <branch_name>
+Tạo một branch mới có tên <branch_name>, nhưng không chuyển sang branch đó.
+
+c. git checkout <branch_name>
+Chuyển đổi (checkout) sang branch <branch_name> đã tồn tại.
+
+d. git checkout -b <branch_name>
+Tạo mới một branch có tên <branch_name> và chuyển sang branch đó ngay lập tức.
+
+e. git pull origin master
+Lấy (pull) các thay đổi mới nhất từ branch master của remote repository (origin) về branch hiện tại trên máy của bạn.

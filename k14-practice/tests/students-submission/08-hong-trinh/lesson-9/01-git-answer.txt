@@ -1,0 +1,16 @@
+a. Giải thích câu lệnh git rebase main, git merge feature/A
+
+- git rebase main: đưa lịch sử trên nhánh main về nhánh hiện tại đang đứng;
+nhánh hiện tại sẵn được sắp xếp những commit trên nhánh main đứng trước những commit của nhánh hiện tại
+- git merge feature/A: câu lệnh này giúp merge những thay đổi ở nhánh feature/A vào nhánh main hiện tại
+
+b. Giải thích các merge strategy: fast-forward, three way merge. Khi nào thì
+các strategy này xảy ra?
+
+- fast-forward: 
++ Khi merge không tạo ra commit merge
++ Khi nhánh main chưa có thay đổi kể từ lúc tạo ra nhánh feature, muốn merge vào hánh hiện tại
+- three way merge: 
++ Khi merge tạo ra commit merge
++ Xảy ra khi muốn merge feature branch vào branch chính, mà lịch sử hai branch này đã có sự thay đổi khác nhau
+

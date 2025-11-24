@@ -1,0 +1,158 @@
+1. giải thích câu lệnh 
+- git commit --amend: Thay đổi commit message gần nhất (câu lệnh git commit --amen chuyển vào vùng VIM)
+- git reset HEAD~3: đưa file từ vùng repository về vùng working directory (undo 3 commit tính từ commit cuối cùng)
+
+2. Liệt kê các commit và các file theo từng vùng ở các branch: main, feature-A, feature-B sau khi thao tác các lệnh sau: 
+a. Tạo thư mục lesson-8 
+- branch main: 
+  + Vùng working directory: trống
+  + Vùng staging: trống
+  + Vùng repository: trống
+- branch feature-A: chưa tạo 
+- branch feature-B: chưa tạo
+
+b. Tạo file: file1, file2, file3 
+- branch main: 
+  + Vùng working directory: trống
+  + Vùng staging: trống
+  + Vùng repository: trống
+- branch feature-A: chưa tạo 
+- branch feature-B: chưa tạo
+
+c. Chạy lệnh: git init 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: trống
+- branch feature-A: chưa tạo 
+- branch feature-B: chưa tạo
+
+d. Chạy lệnh: git add file1 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: file1
+  + Vùng repository: trống
+- branch feature-A: chưa tạo 
+- branch feature-B: chưa tạo
+
+e. Chạy lệnh: git commit -m”init project” 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: chưa tạo 
+- branch feature-B: chưa tạo
+
+f. Chạy lệnh: git checkout -b feat/feature-A 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: được khởi tạo (branch hiện tại)
+- branch feature-B: chưa tạo
+
+g. Chạy lệnh: git add file2 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: file2
+  + Vùng repository: file1
+- branch feature-B: chưa tạo
+
+h. Chạy lệnh: git commit -m”feat: add file2” 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1,file2
+- branch feature-B: chưa tạo
+
+i. Chạy lệnh: git add file3 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: file3
+  + Vùng repository: file1, file2
+- branch feature-B: chưa tạo
+
+j. Chạy lệnh: git commit -m”feat: add file3”
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+- branch feature-B: chưa tạo
+
+k. Chạy lệnh: git checkout -b feat/feature-B 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+- branch feature-B: được khởi tạo (nhánh hiện tại)
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+
+l. Chạy lệnh: git reset HEAD~2 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+- branch feature-B: được khởi tạo (nhánh hiện tại)
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+
+m. Chạy lệnh: git stash 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+- branch feature-B: được khởi tạo (nhánh hiện tại)
+  + Vùng working directory: file1 (file2, file3 chuyển qua vùng stash)
+  + Vùng staging: trống
+  + Vùng repository: file1
+
+n. Chạy lệnh: git checkout main 
+- branch main: (nhánh hiện tại)
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+
+o. Chạy lệnh: git stash pop 
+- branch main: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1
+- branch feature-A: 
+  + Vùng working directory: file1, file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1, file2, file3
+- branch feature-B: được khởi tạo (nhánh hiện tại)
+  + Vùng working directory: file1,file2, file3 
+  + Vùng staging: trống
+  + Vùng repository: file1

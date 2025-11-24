@@ -1,0 +1,5 @@
+Giải thíchh câu lệnh: 
+1. git stash: dùng để lưu tạm thời các thay đổi chưa commit trong thư mục làm việc, có thể chuyển nhánh hoặc làm việc khác mà không làm mất các thay đổi đó.
+2. git stash pop: Khôi phục thay đổi được lưu trong stash gần nhất (unstash). Đồng thời, xóa stash đó khỏi danh sách stash sau khi áp dụng.
+
+

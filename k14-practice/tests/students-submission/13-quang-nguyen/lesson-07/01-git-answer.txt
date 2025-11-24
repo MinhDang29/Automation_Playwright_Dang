@@ -1,0 +1,3 @@
+git stash: Lưu các file chưa commit vào bộ nhớ tạm.
+git stash pop: Truy xuất những các thay đổi đã lưu trữ gần đây nhất 
+vào thư mục làm việc và đồng thời cũng xóa các thay đổi trong stash gần nhất.

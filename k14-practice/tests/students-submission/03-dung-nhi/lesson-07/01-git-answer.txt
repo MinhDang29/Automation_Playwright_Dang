@@ -1,0 +1,10 @@
+1
+- git stash:
+    + Lưu tạm các thay đổi chưa commit (vd: đang code dở phần này, cất tạm làm việc khác )
+    + Trở về trạng thái commit gần nhất
+- git stash pop:
+    + Lấy lại phần code đã stash trước đó
+    + Xóa stash khỏi danh sách, và thực hiện tại thư mục hiện tại
+
+
+

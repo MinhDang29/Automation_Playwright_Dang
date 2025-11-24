@@ -1,0 +1,21 @@
+Bài 1: 
+Giải thích câu lệnh:
+- git stash: lưu trữ tạm thời tất cả thay đổi chưa được commit để bạn có thể chuyển nhánh hoặc làm việc khác mà không mất các thay đổi đó.
+- git stash pop: lấy lại thay đổi từ bộ nhớ tạm (stash) và áp dụng chúng vào nhánh hiện tại.
+
+Bài 2:
+1. Lưu thay đổi tạm thời bằng git stash
+git stash
+
+2. Chuyển sang nhánh feat/lesson-7-dom
+git checkout feat/lesson-7-dom
+
+3. Thực hiện một thay đổi nhỏ và commit
+git add .
+git commit -m "Fix lỗi trên feat/lesson-7-dom"
+
+4. Quay lại nhánh feat/lesson-7-git
+git checkout feat/lesson-7-git
+
+5. Áp dụng lại thay đổi đã stash
+git stash pop

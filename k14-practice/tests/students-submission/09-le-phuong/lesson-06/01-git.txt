@@ -1,0 +1,7 @@
+a. git clone <url> : Tải (sao chép) toàn bộ mã nguồn và lịch sử Git từ một repository từ xa (thường là GitHub, GitLab, v.v) về máy local.
+b. git branch <branch_name> : tạo 1 nhánh mới vs tên <branch_name>
+c. git checkout <branch_name>: chuyển qua nhánh khác tên <branch_name>
+d. git checkout -b <branch_name>  vừa tạo nhánh mới vừa truy cập ngay vào nhánh đó
+e. git pull origin master: là tổ hợp của git fetch and git merge
+    + Git fetch: : Lấy các bản commit mới nhất từ nhánh main của remote origin và cập nhật thông tin về nhánh origin/main trong kho lưu trữ cục bộ.
+    + Git merge: Sau đó, nó hợp nhất các thay đổi từ origin/main vào nhánh hiện tại của bạn (nếu bạn đang ở nhánh main, thì các thay đổi từ remote sẽ được áp dụng vào nhánh này). 

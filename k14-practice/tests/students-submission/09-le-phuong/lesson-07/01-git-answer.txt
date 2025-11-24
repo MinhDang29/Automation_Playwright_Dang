@@ -1,0 +1,18 @@
+git stash : đây là câu lệnh dùng để tạm thời lưu trữ các thay đổi trên working directory 
+mà chưa commit, giúp bạn có thể lưu tạm thay đổi tại nhánh đang làm và 
+chuyển sang làm trên nhánh khác mà không cần phải commit những thay đổi
+Lệnh stash sẽ lưu trạng thái hiện tại (bao gồm các thay đổi trong tracked files, staged files) vào một vùng lưu trữ tạm thời
+(stash stack) => có thể lấy ra tại bất kì nhánh nào khác, không phải chỉ có thể lấy ra tại nhánh mình đã stash
+git stash pop: lấy lại các thay đổi mà đã lưu trữ tạm thời, áp dụng chúng trở lại vào working directory. 
+Đồng thời, nó xóa stash đó khỏi danh sách stash sau khi áp dụng.
+
+Ví dụ: bạn đang làm việc trên nhánh A, bạn đang sửa 1 file text,
+ nhưng bạn chưa sửa xong mà phải switch lại nhánh main để làm việc khác, bạn chưa muốn commit file text,
+ bạn dùng git stash lưu tạm thời, khi xong việc bạn quay lại nhánh A, 
+ xài git stash pop để lấy lại file text đang lưu trữ
+ Câu lệnh
+ 1. User đang ở nhánh feat/lesson-7-git-PhuongLe, đang làm file git anser
+ 1. Git stash :luu thay đổi của file txt
+ 2. Git checkout -b "feat/lesson-7-dom" //checkout qua nhánh dom
+ 3. git checkout feat/lesson-7-git-PhuongLe  //checkout lại nhánh bước 1
+ 4. git stash pop : khôi phục lại những thay đổi của nhánh git bước 1

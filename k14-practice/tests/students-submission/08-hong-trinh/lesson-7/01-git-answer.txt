@@ -1,0 +1,9 @@
+git stash: 
++ khi cần lưu những công việc đang làm, những công việc dở dang --> chưa thể commit, chưa thể tạo thành một phiên bản
+--> lúc này nhảy sang nhánh khác làm thì 2 việc có thể conflict với nhau
+
++ khi git stash: không có file nao thay đổi cả, tất cả các file đều đứng yên 
+--> nhũng file đang ở vùng Staging hoặc là những file đã từng commit lên
+** note: nhưngx file chưaa đưa lên vùng Staing thì git stash không thể lưu lại được
+
+git stash pop: lấy lại những công việc đã lưu tạm thời trước đóß

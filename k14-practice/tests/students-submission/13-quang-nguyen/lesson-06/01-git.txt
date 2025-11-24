@@ -1,0 +1,7 @@
+Giải thích các câu lệnh:
+a. git clone <url>: Lấy dự án có sẵn trên kho lưu trữ Github về mấy local hiện tại của mình, câu lệnh lấy tát cả tệp, nhánh và lịch sử commit  
+b. git branch <branch_name>: Tạo nhánh có tên là <branch_name>
+c. git checkout <branch_name>: Chuyển sang nhánh <branch_name>
+d. git checkout -b <branch_name>: Tạo nhánh <branch_name> và chuyển sang nhánh đó
+e. git pull origin master: git pull origin master: Lấy (fetch) và gộp (merge) code mới nhất từ nhánh master trên 
+remote origin vào nhánh hiện tại.

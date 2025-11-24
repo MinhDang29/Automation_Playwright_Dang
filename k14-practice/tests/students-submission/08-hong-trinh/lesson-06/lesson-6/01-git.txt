@@ -1,0 +1,11 @@
+a.git clone <url>
+--> lấy dự án có sẵn trên github về máy local của mình
+b. git branch <branch_name>
+--> tạo ra một nhánh mới từ main 
+c. git checkout <branch_name>
+--> di chuyển từ nhánh đang đứng sang nhánh khác
+d. git checkout -b <branch_name>
+--> vừa tạo ra một nhánh mới từ main, vừa di chuyển sang nhánh mới đó
+e. git pull origin master
+--> lấy tất cả những thay đổi từ nhánh master trên github có tên là origin 
+merge vào nhánh hiện tại đang làm việc

@@ -1,0 +1,47 @@
+A. Giải thích câu lệnh:
+1. git rebase main
+Ý nghĩa: Lấy các commit từ nhánh hiện tại và "đặt" lại chúng lên đầu nhánh main.
+
+Mục đích:
+
+Giữ lịch sử commit gọn gàng.
+
+Đồng bộ code mới nhất từ main vào nhánh hiện tại (feature).
+
+2. git merge feature/A
+Ý nghĩa: Từ nhánh hiện tại (main), hợp nhất code từ nhánh feature/A.
+
+Mục đích: Kết hợp thay đổi giữa 2 nhánh.
+
+B. Merge strategy
+1. Fast-forward merge
+Khi nào xảy ra?
+Khi nhánh chính (main) không có commit mới nào kể từ lúc tách nhánh feature.
+
+Tức là, dòng thời gian của main trùng hoàn toàn với feature cho đến điểm hiện tại.
+
+Đặc điểm:
+Git không tạo commit merge, chỉ đơn giản "di chuyển" con trỏ main về phía trước.
+
+Lịch sử git trông sạch và tuyến tính.
+
+
+2. Three-way merge
+
+Khi xảy ra: Khi cả hai nhánh đều có commit mới sau khi tách nhánh.
+
+Kết quả: Git sẽ tạo thêm 1 commit merge.
+
+=> 	
+Fast-forward	
+Khi nào xảy ra?
+Main chưa có commit mới sau khi tách nhánh	
+Có commit merge?
+Không
+
+
+Three-way merge	
+Khi nào xảy ra?
+Cả hai nhánh đều có commit mới
+Có commit merge?
+Có
