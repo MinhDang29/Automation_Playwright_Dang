@@ -1,0 +1,10 @@
+a. 
+- git rebase main: gán commit ở nhánh hiện tại lên đầu các commit nhánh main
+- git merge feature/A: Merge các thay đổi của nhánh feature/A vào nhánh hiện tại đang đứng
+b. 
+- fast-forward: 
+    + Xảy ra khi nhánh main chưa có commit nào mới kể từ khi tách ra nhánh feature/A
+    + Không tạo commit merge
+- three way merge: 
+    + Xảy ra khi cả main và feature/A đều có commit mới sau khi tạo nhánh feature/A
+    + Git tạo một merge commit để ghi lại việc hợp nhất

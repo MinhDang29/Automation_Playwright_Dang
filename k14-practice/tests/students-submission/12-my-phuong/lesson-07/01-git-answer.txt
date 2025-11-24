@@ -1,0 +1,4 @@
+Giải thích git stash và git stash pop
+
+- git stash: Lưu lại các công việc đang làm vào 1 vùg nhớ "tạm".
+- git stash pop: Lấy các công việc trong vùng nhớ tạm ra.

@@ -1,0 +1,26 @@
+### `git stash`
+
+- **Câu lệnh**: `git stash`
+- **Tác dụng**: Lưu tạm thời **các thay đổi chưa commit** (trong working directory và staging area) để có thể chuyển sang một nhánh khác hoặc thực hiện công việc khác **mà không mất đi các thay đổi đang làm dở**.
+- **Ví dụ**:
+    
+    ```bash
+    git stash
+    ```
+    
+    → Các thay đổi bạn đang làm sẽ được "giấu" đi và thư mục làm việc sẽ trở lại trạng thái **sạch** (như lúc chưa sửa gì).
+    
+
+---
+
+### `git stash pop`
+
+- **Câu lệnh**: `git stash pop`
+- **Tác dụng**: Lấy lại (khôi phục) các thay đổi mà bạn đã stash trước đó **và đồng thời xóa stash đó khỏi danh sách**.
+- **Ví dụ**:
+    
+    ```bash
+    git stash pop
+    ```
+    
+    → Các thay đổi sẽ được **áp dụng trở lại vào code hiện tại**, giống như bạn chưa từng stash.

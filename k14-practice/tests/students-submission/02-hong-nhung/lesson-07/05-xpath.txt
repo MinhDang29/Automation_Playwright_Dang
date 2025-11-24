@@ -1,0 +1,26 @@
+1.
+<div id="sibling1-1">
+<div id="following1-1">
+<div id="following1-2">
+
+2.
+<div id="sibling2-1">
+<div id="following2-1">
+<div id="following2-2">
+
+3.
+<span id="sibling3-1">
+<span id="following3-1">
+<span id="following3-2">
+
+4. 
+<div id="sibling1-1">
+<div id="sibling1-2">
+
+5. 
+<span id="sibling2-1">
+<span id="sibling2-2">
+
+6.
+<p id="sibling3-1">
+<p id="sibling3-2">

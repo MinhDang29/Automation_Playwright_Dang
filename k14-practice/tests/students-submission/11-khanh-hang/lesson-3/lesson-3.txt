@@ -1,0 +1,63 @@
+1.
+git commit --amend: sửa message và thêm/bớt file
+git commit --amend -m”<message>”: sửa message của commit gần nhất, file commit vẫn giữ nguyên
+git restore --staged <file>: gỡ 1 file đã add khỏi staging (chưa commit) về working directory
+git reset HEAD~1: uncommit gần nhất, file về working directory
+
+2.
+a. Tạo 3 file: file1, file2, file3
+Working: file1, file2, file3
+
+b. git init
+Working: file1, file2, file3
+
+c. git commit -m "init project"
+Working: file1, file2, file3
+
+d. git add file1
+Working: file2, file3
+Staging: file1
+
+e. git commit -m "add file"
+Working: file2, file3
+Staging: empty
+Repo: file1
+
+f. git add .
+Working: empty
+Staging: file2, file3
+Repo: file 1
+
+g. git restore --staged file2
+Working: file2
+Staging: file3
+Repo: file1
+
+h. git commit -m "add all files"
+Working: file2
+Staging: empty
+Repo: file1, file3
+
+i. git reset HEAD~1
+Working: file2, file3
+Staging: empty
+Repo: file1
+
+3. 
+a. git init
+empty
+
+b. Tạo 3 file
+Working: file1.txt, file2.txt, oops/file3.txt
+
+c. Tạo file .gitignore (file1.txt + oops/)
+Working: file1.txt, file2.txt, oops/file3.txt, .gitignore
+
+d. git add .
+Working: file1.txt, oops/file3.txt
+Staging: file2.txt, .gitignore
+
+e. git commit -m "init project"
+Working: file1.txt, oops/file3.txt
+Staging: empty
+Repo: file2.txt, .gitignore

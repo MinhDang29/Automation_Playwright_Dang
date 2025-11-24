@@ -1,0 +1,20 @@
+Giải thích các câu lệnh:
+
+a. git clone <url>
+   - Lệnh này được dùng để tạo một bản sao cục bộ (local copy) của một kho lưu trữ (repository) Git từ xa (remote repository). <url> là địa chỉ URL của repository trên các dịch vụ như GitHub
+
+b. git branch <branch_name>
+   - Lệnh này được dùng để tạo một nhánh (branch) mới trong kho lưu trữ cục bộ local. <branch_name> là tên muốn đặt cho nhánh mới. 
+
+c. git checkout <branch_name>
+   - Lệnh này được dùng để chuyển đổi giữa các nhánh hiện có trong kho lưu trữ cục bộ. 
+
+d. git checkout -b <branch_name>
+   - Lệnh này là sự kết hợp của hai lệnh: 'git branch <branch_name>' và 'git checkout <branch_name>'. Nó vừa tạo một nhánh mới có tên <branch_name> VÀ ngay lập tức chuyển sang nhánh đó.
+
+e. git pull origin master
+   - Lệnh này được dùng để cập nhật lưu trữ cục bộ của máy với những thay đổi mới nhất. Cụ thể:
+     - 'git pull': Là một lệnh tổng hợp của 'git fetch'  và 'git merge' 
+     - 'origin': Là tên mặc định của remote repository đã clone hoặc đã thêm vào.
+     - 'master': Là tên của nhánh trên remote repository muốn kéo về.
+     lệnh này tải về và hợp nhất tất cả các commit mới từ nhánh 'master' trên remote 'origin' vào nhánh hiện tại trên máy.

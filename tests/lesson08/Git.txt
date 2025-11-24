@@ -1,0 +1,18 @@
+- git commit --amend: câu lệnh này giúp thay đổi commtt message của commit gần nhất
+- git reset HEAD~3: đưa 3 commit gần nhất  từ vùng repository về vùng working directory
+
+a, folder lesson8
+b, local: file 1,2,3
+c, git init: khởi tạo 3 file ở vùng working directory
+d, git add file 1: đưa file 1 lên vùng stagging
+e, git commit -m "lesson 8": đưa file 1 lên vùng repository
+f, git checkout  -b"feat/feature-A": tạo nhánh A mới và checkout sang nhánh đó
+g, git add file 2: đưa file 2 lên vùng stagging
+h, git commit -m "lesson 8": đưa file 2 lên vùng repository
+i, git add file 3: đưa file 3 lên vùng stagging
+j, git commit -m "lesson 8": đưa file 3 lên vùng repository
+k, git checkout  -b"feat/feature-B": tạo nhánh b mới và checkout sang nhánh đó
+l. Chạy lệnh: git reset HEAD~2: đưa file 2,3 từ vùng repository về vùng working directory
+m. Chạy lệnh: git stash: lưu tạm các thay đổi ở nhánh B
+n. Chạy lệnh: git checkout main: chuyển nhánh B sang main
+o, git stash pop: lấy lại các thay đổi ở nhánh B

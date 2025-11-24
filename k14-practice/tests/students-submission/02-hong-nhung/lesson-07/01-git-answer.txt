@@ -1,0 +1,10 @@
+git stash: 
+- Để lưu tạm các thay đổi hiện tại chưa commit
+- Trả lại thư mục làm việc về trạng thái ban đầu (như sau lần commit gần nhất)
+
+git stash pop:
+- Lấy lại thay đổi mà bạn đã stash trước đó
+- Áp dụng nó vào thư mục làm việc hiện tại
+- Xóa stash đó khỏi danh sách
+
+

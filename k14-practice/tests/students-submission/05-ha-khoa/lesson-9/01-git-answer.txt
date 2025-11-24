@@ -1,0 +1,7 @@
+a.
+- git rebase main: dùng để phát lại các commit của nhánh hiện tại lên trên nhánh main, giúp lịch sử commit gọn gàng, không có commit merge, dễ đọc hơn.
+- git merge feature/A: dùng để gộp nhánh feature/A vào nhánh hiện tại. Có thể sinh ra commit merge nếu có xung đột hoặc lịch sử khác nhau.
+
+b.
+- Fast-forward merge: xảy ra khi nhánh chính (main) không có thay đổi nào kể từ khi tạo nhánh feature. Khi merge, Git chỉ cần di chuyển con trỏ lên mà không tạo commit merge.
+- Three-way merge: xảy ra khi cả 2 nhánh (main và feature) đều có thay đổi. Git cần tạo một commit merge để kết hợp cả 2.

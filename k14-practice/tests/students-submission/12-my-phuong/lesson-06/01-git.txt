@@ -1,0 +1,11 @@
+Giải thích các câu lệnh:
+a. git clone <url>
+=> Tạo bản sao (clone) của repo từ URL về máy local.
+b. git branch <branch_name>
+=> Tạo nhánh mới với tên <branch_name>.
+c. git checkout <branch_name>
+=> Chuyển sang làm việc trên nhánh <branch_name>.
+d. git checkout -b <branch_name>
+=> Tạo mới và chuyển luôn sang nhánh <branch_name>.
+e. git pull origin master
+=> Cập nhật nhánh hiện tại bằng nội dung mới nhất từ nhánh master trên repo origin.

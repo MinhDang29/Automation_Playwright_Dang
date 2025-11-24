@@ -1,0 +1,55 @@
+Giả sử bạn đang đứng tại vị trí của
+//div[@id='child']
+
+a. Các phần tử con:
+<label for="email">Email:</label>
+<input type="email" id="email" name = "mail" required="">
+
+b. Các phần tử cha: không có
+
+c. Các phần tử hậu duệ:
+<label for="email">Email:</label>
+<input type="email" id="email" name = "mail" required="">
+
+d. Các phần tử tổ tiên:
+<html>
+<form id="registrationForm">
+
+e. Các phần tử anh em:
+<div class="form-group" id="parent"></div>
+<div class="form-group"></div> (Gender)
+<div class="form-group"></div> (Hobbies)
+<div class="form-group"></div> (Submit button)
+
+f. Các phần tử phía sau:
+
+<div class="form-group">
+  <label for="gender">Gender:</label>
+</div>
+<div class="form-group">
+  <label for="hobbies">Hobbies:</label>
+</div>
+<div class="form-group">
+  <button type="submit">Register</button>
+</div>
+
+g. Các phần tử phía trước:
+<div class="form-group" id="parent">
+  <label id="preceding" for="username">Username:</label>
+</div>
+
+h. Các phần tử anh em phía sau cùng cấp:
+<div class="form-group">
+  <label for="gender">Gender:</label>
+</div>
+<div class="form-group">
+  <label for="hobbies">Hobbies:</label>
+</div>
+<div class="form-group">
+  <button type="submit">Register</button>
+</div>
+
+i. Các phần tử anh em phía trước cùng cấp:
+<div class="form-group" id="parent">
+  <label id="preceding" for="username">Username:</label>
+</div>
