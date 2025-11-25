@@ -10,5 +10,6 @@ test("Drag & Drop manually", async ({ page}) => {
     // await dropTo.hover();
     // await page.mouse.up();
     await dragFrom.dragTo(dropTo);
+    // Dang
 
 });
