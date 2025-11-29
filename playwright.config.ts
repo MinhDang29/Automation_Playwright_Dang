@@ -31,6 +31,9 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
 
+    /* Maximize screen when test */
+    viewport: null,
+
     //xem video với  xem log khi test
     // video: {
     //   mode: 'on',
@@ -43,7 +46,15 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome'] ,
+      viewport: null,             // 1. Cho phép tràn màn hình
+        deviceScaleFactor: undefined, // 2. QUAN TRỌNG: Xóa bỏ tỉ lệ điểm ảnh để tránh xung đột
+        
+        launchOptions: {
+            args: ["--start-maximized"]
+      }
+    }
+      
     },
 
     {
